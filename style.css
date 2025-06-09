@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
 
-/* --- GLOBAL SCALE ADJUSTMENT --- */
-html {
-    zoom: 0.75; /* Scales the entire page down to 75% of its original size */
-}
-
 :root {
     --primary-color: #005BBB;
     --secondary-color: #FFD500;
-    --text-color: #e0e0e0;
-    --glass-bg: rgba(10, 10, 10, 0.75);
+    /* FIX: Increased contrast by making text pure white */
+    --text-color: #ffffff; 
+    /* FIX: Darkened glass background for better contrast */
+    --glass-bg: rgba(10, 10, 10, 0.8); 
     --glass-blur: 16px;
     --breakpoint-desktop: 769px;
     --cursor-x: 50%;
@@ -28,13 +25,7 @@ body {
     color: var(--text-color);
     background-color: #000;
     background-blend-mode: overlay;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.08"/></svg>'),
-                      radial-gradient(
-                          circle at var(--cursor-x) var(--cursor-y),
-                          var(--primary-color) 0%,
-                          var(--secondary-color) 25%,
-                          #000 50%
-                      );
+    background-image: url('data:image/svg+xml,...'), radial-gradient(...);
 }
 
 header {

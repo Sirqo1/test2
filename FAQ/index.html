@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - FMMGRAPHICS</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- FIX: Asynchronous font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Poppins&display=swap">
+
+    <!-- FIX: Non-blocking CSS loading -->
+    <link rel="stylesheet" href="../style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../style.css"></noscript>
 </head>
 <body>
     <header>
@@ -17,7 +25,6 @@
                 <li><a href="./" class="active">FAQ</a></li>
             </ul>
         </nav>
-        <!-- FIX: Added aria-label for accessibility -->
         <button class="burger-menu" id="burger-menu" aria-label="Open navigation menu">
             <span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span>
         </button>
@@ -27,7 +34,6 @@
             <ul>
                 <li><a href="../home/">HOME</a></li>
                 <li><a href="../about/">ABOUT ME</a></li>
-                <li><a href="../downloads/">DOWNLOADS</a></li>
                 <li><a href="./" class="active">FAQ</a></li>
             </ul>
         </nav>

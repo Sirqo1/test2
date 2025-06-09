@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
-
 :root {
     --primary-color: #005BBB;
     --secondary-color: #FFD500;
-    /* FIX: Increased contrast by making text pure white */
     --text-color: #ffffff; 
-    /* FIX: Darkened glass background for better contrast */
     --glass-bg: rgba(10, 10, 10, 0.8); 
     --glass-blur: 16px;
     --breakpoint-desktop: 769px;

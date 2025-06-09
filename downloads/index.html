@@ -5,17 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOWNLOADS - FMMGRAPHICS</title>
 
-    <!-- FIX: Preload font files to prevent layout shift -->
+    <!-- Optimized Font Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Poppins&display=optional" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Poppins&display=optional">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&family=Poppins&display=swap" media="print" onload="this.media='all'">
 
     <!-- Non-blocking CSS loading -->
     <link rel="stylesheet" href="../style.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="../style.css"></noscript>
 </head>
 <body>
-    <!-- ... body content ... -->
+    <header>
+        <h1 class="logo">FMMGRAPHICS</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../home/">HOME</a></li>
+                <li><a href="../about/">ABOUT ME</a></li>
+                <li><a href="./" class="active">DOWNLOADS</a></li>
+                <li><a href="../FAQ/">FAQ</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu" id="burger-menu" aria-label="Open navigation menu">
+            <span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span>
+        </button>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="../home/">HOME</a></li>
+                <li><a href="../about/">ABOUT ME</a></li>
+                <li><a href="./" class="active">DOWNLOADS</a></li>
+                <li><a href="../FAQ/">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="scroll-reveal">
+            <h2>DOWNLOADS</h2>
+            <p>Your downloads content goes here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FMMGRAPHICS. All rights reserved.</p>
+    </footer>
+    <script src="../main.js"></script>
 </body>
 </html>
